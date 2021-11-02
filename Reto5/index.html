@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Retos Ciclo 3</title>
+
+     <style>
+         body{
+
+            background-color: rgb(21, 201, 75);  
+            text-align: center;
+             
+         }
+     </style>
+</head>
+
+<body>
+    <img src="fincat.jpg" height="150" align="left"/>
+      <h1>                
+     <p style="color:rgb(128, 109, 0);" align="center"><B><i>FINCAS COLOMBIANAS</B></i></p></h1>
+
+     <h2>Ingresa los datos de usuario </h2> 
+     <h2>___________________________________________________________________________</h2>
+    <br>
+    <br>
+        
+
+     <h3>Para efectos de revisión del código: usuario= admin  contraseña=  12345 </h3>
+
+ 
+<form name="login"> 
+     <table width="200" border="0"> 
+       <tr> 
+         <th scope="row"><h2>Usuario</h2></th> 
+         <td><span class="cnt"> 
+           <input name="usuario" type="text" class="Input" value="" size="20" /> 
+         </span></td> 
+       </tr> 
+       <tr> 
+         <th height="33" scope="row"><h2>Contraseña</h2></th> 
+         <td><span class="cnt"> 
+           <input name="password" type="password" class="Input" value="" size="20" /> 
+         </span></td> 
+         <td><span class="cnt"> 
+           <input value="Entrar" target="_parent" onclick="Login()" type="button" class="boton"/> 
+         </span></td> 
+       </tr> 
+       <tr> 
+         <th scope="row"><input type="reset" name="Borrar" id="Borrar" value="Reset" class="boton" /></th> 
+       </tr> 
+     </table> 
+</form> 
+
+<script language="JavaScript"> 
+function Login(){ 
+var done=0; 
+var usuario=document.login.usuario.value; 
+var password=document.login.password.value; 
+if (usuario=="admin" && password=="12345") { 
+window.location=" index1.html"; 
+} 
+
+if (usuario !="admin" || password !="12345") { 
+     alert("Usuario o contraseña incorrecta"); 
+} 
+
+if (usuario=="" && password=="") { 
+window.location="errorpopup.html"
+
+} 
+} 
+
+</script> 
+ 
+</body>
+</html>
